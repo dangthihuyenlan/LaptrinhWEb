@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=GFS+Neohellenic&family=Lexend:wght@200;400&family=Roboto+Slab&family=Rokkitt:wght@100;400&family=Satisfy&display=swap');
+*{
+    font-family: 'Lexend', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    background: linear-gradient(to top, rgb(255, 254, 254), #fff);
+    color: #fff;
+    height: 70px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.10);
+    
+}
+.name_navbar{
+    color:green;
+    font-weight: 900;
+    margin-left: 30px;
+}
+.icon_navbar{
+    margin-right: 30px;
+}
+.icon_navbar ion-icon{
+    width: 35px;
+    height: 35px;
+    color:green;
+}
+.main{
+    z-index: -1;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+.sidebar {
+    background-color: #fff;
+    padding: 15px;
+    height: auto;
+    width: 15%;
+    box-shadow: 5px 0 10px -5px rgba(0, 0, 0, 0.3); 
+}
+.menu_sidebar{
+    margin-top: 70px;
+    list-style: none;
+    width: 100%;
+    padding-left: 0;
+}
+.menu_sidebar li a{
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    height: 80px;
+    color: black;
+    text-decoration: none;
+}
+.menu_sidebar li ion-icon{
+    width: 25px;
+    height: 25px;
+    margin-top: 12px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 85%;
+    height: auto;
+    background-color: #78d9de;
+}
+.title{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); ;
+}
+.content_overview{
+    display: block;
+    width: 90%;
+    height: 90%;
+    
+}
+.content_overview_1{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.content_overview_2{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.overview{
+    width: 35%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.number_view b{
+  font-size: 40px;
+}
+.number_view p{
+    font-size: 15px;
+}
+.img_view ion-icon{
+    height: 50px;
+    width: 50px;
+    color: black;
+}
+.account_user{
+    display: none;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px ;
+}
+.content_table{
+    display: flex;
+    justify-content: center;
+}
+
+.table{
+    margin-top: 30px;
+    width: 90%;
+    height: auto;
+    margin-bottom: 30px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.cot th{
+    width: auto;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    color: dimgrey;
+    border: 1px solid silver;
+}
+
+.Product{
+    display: none;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px ;
+}
+.ware_house{
+    display: none ;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px ;
+}
+.order{
+    display: none;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px ;
+}
+
+.add_product{
+    margin-top: 30px;
+}
+.add_product label span{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100px;
+    height: 32px;
+    background-image: linear-gradient(90deg, transparent 0%, transparent 50%, black 50%, black 100%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.5s;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+.add_product label span:hover{
+    background-position: left;
+    color: black;
+}
+.input_add_product{
+    display: none;
+}
+.input_add_product form{
+    width: 100%;
+}
+.input_edit_product{
+    display: none;
+}
+.input_edit_warehouse{
+    display: none;
+}
+.input_edit_product form{
+    width: 100%;
+}
+.content_input_add {
+    display: flex;
+    gap: 20px;
+}
+.content_input_add_1{
+   width: 50%;
+}
+.content_input_add_2{
+    width: 50%;
+ }
+.mb-3{
+    display: grid;
+    width: 100%;
+    margin-top: 10px;
+}
+.mb-3 input{
+   margin-top: 5px;
+   border: 1px solid black;
+   width: 90%;
+   height: 30px;
+   transition: border-color 0.3s ease;
+}
+.mb-3 input:hover{
+    border-color: #4caf50;
+    box-shadow: 0 0 5px #4caf50;
+}
+.mb-3 input:focus{
+    border-color: #4caf50;
+    box-shadow: 0 0 5px #4caf50;
+}
+.mb-3 select{
+    margin-top: 5px;
+    width: 92%;
+    height:39px;
+    border: 1px solid black;
+    transition: border-color 0.3s ease;
+ }
+ .mb-3 select:hover{
+    border-color: #4caf50;
+    box-shadow: 0 0 5px #4caf50;
+}
+.mb-3 select:focus{
+    border-color: #4caf50;
+    box-shadow: 0 0 5px #4caf50;
+}
+.mb-3 span{
+    margin-top: 5px;
+    margin-left: 10px;
+    
+}
+input[type="file"] {
+    display: none;
+  }
+#imageUpload {
+    display: none;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+button {
+    background-color: white;
+    color: #fff;
+    border: 1px solid black;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    color: black;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: black;
+    color: aqua;
+}
+
+#uploadForm.dragover {
+    border: 2px dashed #4caf50;
+    background-color: #f9f9f9;
+}
+#add_product:checked~.input_add_product{
+    display: block;
+}
+/* hàng customers */
+.hang_customers td{
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid silver;
+    height: 50px;
+    width: 100px;
+}
+.hang_customers td button{
+    border: none;
+    background-color: white;
+    margin-bottom: 11px;
+}
+.hang_customers td button ion-icon{
+    width: 25px;
+    height: 25px;
+}
+.hang_customers {
+    display: none;
+}
+.hang_customers.active {
+    display: table-row;
+}
+.pagination_customers {
+    margin-top: 10px;
+}
+.pagination_customers button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+/* Hang Product */
+.hang_product td{
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid silver;
+    height: 50px;
+    width: 100px;
+}
+.hang_product td button{
+    border: none;
+    background-color: white;
+    margin-bottom: 11px;
+}
+.hang_product td button ion-icon{
+    width: 25px;
+    height: 25px;
+}
+.hang_product td img{
+    width: 50%;
+    height: auto;
+}
+.hang_product td select {
+    width: auto;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.hang_product {
+    display: none;
+}
+.hang_product.active {
+    display: table-row;
+}
+.pagination {
+    margin-top: 10px;
+}
+.pagination button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+/* hàng warehouse */
+.hang_warehouse td{
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid silver;
+    height: 50px;
+    width: 100px;
+}
+.hang_warehouse td button{
+    border: none;
+    background-color: white;
+    margin-bottom: 11px;
+}
+.hang_warehouse td button ion-icon{
+    width: 25px;
+    height: 25px;
+}
+.hang_warehouse {
+    display: none;
+}
+.hang_warehouse.active {
+    display: table-row;
+}
+.pagination_warehouse {
+    margin-top: 10px;
+}
+.pagination_warehouse button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+/* hàng Orders */
+.hang_orders td{
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid silver;
+    height: 50px;
+    width: 100px;
+}
+.hang_orders td button{
+    border: none;
+    background-color: white;
+    margin-bottom: 11px;
+}
+.hang_orders td button ion-icon{
+    width: 25px;
+    height: 25px;
+}
+.hang_orders td select {
+    width: auto;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.hang_orders {
+    display: none;
+}
+.hang_orders.active {
+    display: table-row;
+}
+.pagination_orders {
+    margin-top: 10px;
+}
+.pagination_orders button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
